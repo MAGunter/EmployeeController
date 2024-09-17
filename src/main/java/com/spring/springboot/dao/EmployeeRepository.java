@@ -7,7 +7,4 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 //Spring автоматический понимает что это репозиторий из за JpaRepository и аннотацию указывать не надо
-public interface EmployeeRepository extends JpaRepository<Employee, Integer>
-{
-    public List<Employee> findAllByName(String name);
-}
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {}
